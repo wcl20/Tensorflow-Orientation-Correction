@@ -26,22 +26,22 @@ pip3 install --upgrade pip
 pip3 install opencv-python pillow imutils tqdm h5py scikit-learn
 ```
 
-# Build Project 
+## Build Project 
 ```bash
 python3 build.py --img-dir dataset/images --output dataset/rotated_images
 ```
 
-# Extract Features using VGG Model
+## Extract Features using VGG Model
 ```bash
 python3 features.py --img-dir dataset/rotated_images --output dataset/features.hdf5
 ```
 
-# Train model
+## Train model
 ```bash
 python3 train.py --db dataset/features.hdf5 --output model.pickle
 ```
 
-# Test model
+## Test model
 ```bash
 python3 test.py --db dataset/features.hdf5 --img-dir dataset/rotated_images --model model.pickle
 ```
