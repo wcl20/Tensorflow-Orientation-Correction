@@ -33,12 +33,12 @@ python3 build.py --img-dir dataset/images --output dataset/rotated_images
 
 # Extract Features using VGG Model
 ```bash
-python3 featuers.py --img-dir dataset/rotated_images --output dataset/features.hdf5
+python3 features.py --img-dir dataset/rotated_images --output dataset/features.hdf5
 ```
 
 # Train model
 ```bash
-python3 train.py --db dataset/features.hdf5 --model model.pickle
+python3 train.py --db dataset/features.hdf5 --output model.pickle
 ```
 
 # Test model
